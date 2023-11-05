@@ -1,0 +1,85 @@
+:root{
+    --fundo1 : #232e35;
+    --fundo2 : #212c33;
+    --fundo3 : #121b21;
+    --cinza : #afbac1;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 7%;
+    background: var(--fundo1);
+}
+.leftSide{
+    color: var(--cinza);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    background: var(--fundo2);
+    box-shadow: 0 0 1px var(--cinza);
+    padding: 0 10px 0 0;
+}
+.leftSide svg{
+    margin: 8px;
+}
+.profileImage{
+    margin: 8px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+body > nav{
+    height: 93%;
+}
+.searchBox{
+    color: var(--cinza);
+    padding: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    background: var(--fundo3);
+}
+.searchBox svg{
+    margin: 5px;
+}
+.searchBox input{
+    font-size: 14px;
+    font-weight: 500;
+    outline: none;
+    padding: 5px;
+    width: 75%;
+    background: var(--fundo1);
+    color: var(--cinza);
+    border: none;
+}
+.searchInput{
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    background: var(--fundo1);
+    color: var(--cinza);
+}
+@media (max-width: 1195px) {
+    .leftSide,.searchBox{
+        width: 40%;
+    }
+  }
+@media (min-width: 1160px) {
+    
+  }
